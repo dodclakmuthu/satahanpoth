@@ -1,17 +1,20 @@
 <template>
-  <h3>Main Layout</h3>
-  <router-view/>
+  <div class="main-container">
+    <NavBar />
+    <router-view />
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
+
+import NavBar from "@/components/NavBar.vue";
 
 export default defineComponent({
-  name: 'MainLayout'
+  name: "MainLayout",
+  components: {
+    NavBar: NavBar,
+  },
 });
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
