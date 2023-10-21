@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-   <h3>Home page</h3>
+   <h3>Profile page</h3>
   </div>
 </template>
 
@@ -8,6 +8,6 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'HomeView',
+  name: 'ProfileView',
 });
 </script>
